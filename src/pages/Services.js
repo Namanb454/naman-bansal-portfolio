@@ -73,9 +73,9 @@ function Services() {
     ]
 
     return (
-        <div id='services' className='w-[100%] bg-neutral-00 mx-auto py-24 bg-fixed'
+        <div id='services' className='w-[100%] bg-neutral-00 mx-auto py-24 bg-fixed bg-cover'
             style={{
-                backgroundImage: 'url(https://img.freepik.com/free-photo/3d-rendering-abstract-black-white-geometric-background_23-2150853539.jpg?t=st=1705695451~exp=1705699051~hmac=da54c495f5dece263f6a87afad98660e2dd6447bc7fc4c69cebd93be649d1c11&w=996)'
+                backgroundImage: 'url(servicebg.jpg)'
                 
             }}
         >

@@ -39,7 +39,7 @@ function About() {
     return (
         <div className='w-[100%] bg-neutral-00 mx-auto py-24 bg-fixed' id='naman'
             style={{
-                backgroundImage: 'url(https://img.freepik.com/premium-photo/top-view-office-desk-workspace-with-smartphone-notebook-graphic-tablet-keyboard-mouse-b_639785-11062.jpg?w=1060)  ',
+                backgroundImage: 'url(aboutbg.jpg)  ',
 
             }}
         >
