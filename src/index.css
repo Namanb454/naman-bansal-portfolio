@@ -193,3 +193,35 @@
 .custom-shape-divider-top-1705513934 .shape-fill {
   fill: transparent;
 }
+
+
+/* CustomCursor.css */
+/* CustomCursor.css */
+.custom-cursor {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 14px solid #fff4d6;
+  transform: rotate(45deg);
+  position: fixed;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  transition: transform 0.1s ease-in-out, background-color 0.2s ease-in-out;
+  animation: rotate 2s linear infinite;
+}
+
+.custom-cursor:hover {
+  background-color: black;
+  transform: scale(1.5) rotate(45deg);
+  animation: none; /* Disable rotation animation on hover */
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(405deg);
+  }
+}

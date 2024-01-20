@@ -74,7 +74,7 @@ const Navbar = () => {
         };
     }, []);
     return (
-        <nav className='xl:w-[70%] w-[100%] mx-auto backdrop-blur-3xl rounded-full my-5' style={{
+        <nav className='xl:w-[70%] w-[100%] mx-auto backdrop-blur-2xl rounded-full my-5' style={{
             // backgroundColor: navColor,
             // height: navSize,
             // color: textcolor,
@@ -110,7 +110,7 @@ const Navbar = () => {
 
                                 <a
                                     href="#contact"
-                                    className="tracking-wider items-end justify-end text-[#fff4d6] font-semibold bg-neutral-700 hover:bg-[#fff4d6] hover:text-neutral-900 px-5 py-[5px] rounded-xl text-[15px] transition-all ease-in-out duration-500"
+                                    className="tracking-wider items-end justify-end text-[#fff4d6] bg-neutral-700 hover:bg-[#fff4d6] hover:text-neutral-900 px-5 py-[5px] rounded-xl text-[15px] transition-all ease-in-out duration-500"
                                 >
                                     Get In Touch</a>
 
@@ -135,7 +135,7 @@ const Navbar = () => {
                             <span className="block h-0.5 w-7 bg-[#6527BE] transition-all ease-in-out duration-1000"></span>
                         </motion.div> */}
                         <div
-                            className={`HAMBURGER-ICON space-y-2 ${isOpen ? "hidden" : "block"}`}
+                            className={`HAMBURGER-ICON space-y-2 ${isOpen ? "hidden" : "block "}`}
                             onClick={() => setIsOpen((prev) => !prev)}
                         >
                             <span className="block h-0.5 w-4 ml-auto bg-[#fff4d6] "></span>
@@ -162,8 +162,8 @@ const Navbar = () => {
                                 </svg>
                             </div>
                             <div
-                                className={`${isOpen ? 'block' : 'hidden'
-                                    } md:hidden transition-all w-full px-2 ease-in-out duration-1000`}
+                                className={`${isOpen ? 'block ' : 'hidden'
+                                    } md:hidden transition-all w-full px-2 ease-in-out duration-1000 `}
                                 id="mobile-Homeu"
                                 ref={menuRef}
                             >
@@ -185,6 +185,7 @@ const Navbar = () => {
 
                                     <a href='#'
                                         onClick={() => setIsOpen(false)}
+                                        ref={menuRef}
                                         className={`flex-shrink-0 flex transition-all ease-in-out duration-100 `}>
                                         <img src="profile2.png" alt="Profile" className='items-start w-8 rounded-full h-full transition-transform' />
                                         <Link to='/' className='lg:text-xl text-[#908a76] text-lg font-semibold tracking-wider'>Naman Bansal</Link>
@@ -195,7 +196,8 @@ const Navbar = () => {
                                             <motion.a variants={itemVariants} key={data.id}
                                                 href={data.link}
                                                 onClick={() => setIsOpen(false)}
-                                                className="text-[#fff4d6] text-left hover:tracking-widest scroll-smooth hover:scroll-auto transition-all block px-3 py-2 rounded-md text-base"
+                                                ref={menuRef}
+                                                className="text-[#fff4d6] text-left hover:tracking-widest scroll-smooth hover:scroll-auto transition-all block px-3 py-2 rounded-md text-base w-fit bg-[#908a76]/50"
                                             >
                                                 {data.nav}
                                             </motion.a>
@@ -204,7 +206,7 @@ const Navbar = () => {
                                     <a
                                         href="#contact"
                                         onClick={() => setIsOpen(false)}
-                                        className="w-fit text-[#fff4d6] font-semibold bg-[#908a76] hover:bg-[#fff4d6] transition-all hover:text-[#908a76] block px-5 py-[5px] rounded-xl text-base"
+                                        className="w-fit text-[#fff4d6] bg-[#908a76] hover:bg-[#fff4d6] transition-all hover:text-[#908a76] block px-5 py-[5px] rounded-xl text-base"
                                     >
                                         Get In Touch
                                     </a>
