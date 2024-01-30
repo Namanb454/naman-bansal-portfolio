@@ -21,7 +21,7 @@ function AppRouter() {
 
     useEffect(() => {
         const fetchData = async () => {
-            await new Promise((resolve) => setTimeout(resolve, 2000));
+            await new Promise((resolve) => setTimeout(resolve, 10));
             setLoading(false);
         };
         fetchData();
@@ -29,14 +29,14 @@ function AppRouter() {
 
     return (
         <Router>
-            <div id='naman' className='cursor-none bg-cover bg-fixed bg-neutral-950'
+            <div id='naman' className='cursor-pointer bg-cover bg-fixed bg-neutral-950'
 
             >
-                
-                <CustomCursor />
+
+                {/* <CustomCursor /> */}
                 {loading ? (
                     <Loader />
-                    
+
                 ) :
                     <Routes>
                         <Route exact path="/" element={<Home />} />

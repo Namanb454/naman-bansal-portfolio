@@ -1,7 +1,25 @@
 import { motion, useTransform, useScroll } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState } from "react";
+import { Link } from "react-router-dom";
+import ReadMoreButton from "./ReadMoreButton";
 
 const Example = () => {
+    const [currentSlide, setCurrentSlide] = useState(0);
+
+
+    const summary = () => {
+        setCurrentSlide((prevSlide) => (0));
+    }
+    const education = () => {
+        setCurrentSlide((prevSlide) => (1));
+    }
+    const experience = () => {
+        setCurrentSlide((prevSlide) => (2));
+    }
+    const achievement = () => {
+        setCurrentSlide((prevSlide) => (3));
+    }
+
     return (
         <div className="">
             {/* <div className="flex h-48 items-center justify-center">
@@ -28,9 +46,9 @@ const HorizontalScrollCarousel = () => {
     const x = useTransform(scrollYProgress, [0, 1], ["1%", "-70%"]);
 
     return (
-        <section ref={targetRef} className="relative h-[300vh] ">
-            <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-                <motion.div style={{ x }} className="flex gap-4">
+        <section ref={targetRef} className="relative h-[300vh]">
+            <div className="sticky top-0 flex h-screen items-center overflow-hidden mx-auto w-fit">
+                <motion.div style={{ x }} className="flex gap-4 group">
                     {cards.map((card) => {
                         return <Card card={card} key={card.id} />;
                     })}
@@ -42,37 +60,53 @@ const HorizontalScrollCarousel = () => {
 
 const Card = ({ card }) => {
     return (
-        <div
+        <motion.div
             key={card.id}
-            className="group relative w-[20vw] h-[50vh] overflow-hidden bg-neutral-200"
+            className="group-hover:scale-50 hover:!scale-125 hover:z-10 transition-transform ease-in-out duration-700 relative w-[20vw] h-[60vh] overflow-hidden shadow-md shadow-white"
         >
-            <div
-                style={{
-                    backgroundImage: `url(${card.url})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                }}
-                className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
-            ></div>
-            <div className="absolute inset-0 z-10 grid place-content-center">
-                {/* <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-6xl font-black uppercase text-white "> */}
-                {/* {card.title} */}
-                {/* </p> */}
+
+            <div className="h-[30vh] w-[100%] mx-auto">
+                <motion.img
+                    src={card.url}
+                    className=" inset- z- w-[100%] aspect-[16/9]  my-auto mx-auto bg bg-no-repeat transition-transform duration-300 group-hover:scale-"
+                />
             </div>
-        </div>
+            <div className=" inset- z- ">
+                <div className="flex">
+
+                    <p className="text-lg mx-auto font-black uppercase text-white h-10 my-auto group-transition-transform group-ease-in-out group-duration-300 group-hover:tracking-wider">
+                        {card.title}
+                    </p>
+
+                    <div class="w-fit mx-auto group relative">
+                        <Link to={card.link}>
+                            <svg stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" fill="none" viewBox="0 0 24 24" class="w-8 hover:scale-125 duration-200 stroke-white hover:stroke-blue-500"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </Link>
+                        <span class="absolute -top-14 left-[50%] -translate-x-[50%] 
+  z-20 origin-left scale-0 px-3 rounded-lg border 
+  border-gray-300 bg-white py-2 text-sm font-bold
+  shadow-md transition-all duration-300 ease-in-out 
+  group-hover:scale-100">Code<span>
+                            </span></span></div>
+                </div>
+                <p className=" text-xs group-hover:text-[10px] scale-[0] group-hover:scale-90 font-thin uppercase text-white tracking-wider">
+                    {card.description}
+                </p>
+
+
+
+            </div>
+        </motion.div>
     );
 };
 
 export default Example;
 
 const cards = [
-    { url: 'features/js.png', title: 'JavaScript' },
-    { url: 'features/reactjs.png', title: 'React JS' },
-    { url: 'features/nextjs.png', title: 'Next JS' },
-    { url: 'features/mongodb.png', title: 'MongoDB' },
-    { url: 'features/nodejs.png', title: 'Node JS' },
-    { url: 'features/django.png', title: 'Django' },
-    { url: 'features/auth0.png', title: 'Auth0' },
-    { url: 'features/firebase.png', title: 'Firebase' },
-
+    { url: 'projects/sitescript.png', title: 'siteScript', description: 'Platform is designed to enhance the user experience and offers a multitude of features to achieve this goal.', link: 'https://github.com/Namanb454/siteScript' },
+    { url: 'projects/Apninews.png', title: 'Apni News', description: 'News application using news api, helps to get 24 hours latest news build on ReactJS.', link: 'https://github.com/Namanb454/Apni-News' },
+    { url: 'projects/Trendify.png', title: 'Trendify', description: 'Led the development of an ecommerce web application, driving a substantial 35% boost in online sales for smart accessories. Successfully integrated and optimized features with Sanity CMS, resulting in a 20% increase in user engagement.', link: 'https://github.com/Namanb454/MERNStackEcommerce' },
+    {
+        url: 'projects/Medlinc.png', title: 'Medlinc', description: "Deigned and implemented a web-based healthcare application that provides a comprehensive range of medical services on a unified platform. Provides 3 distinct services: medical consultation, laboratory testing, and medical product delivery. Offers essential services, including 24/7 emergency assistance (SOS).", link: 'https:/ / github.com / Namanb454 / HealthCare'
+    },
 ];

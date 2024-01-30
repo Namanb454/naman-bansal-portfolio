@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { motion, useTransform, useScroll } from "framer-motion";
 import Typewriter from 'typewriter-effect';
 // import Navbar from './Navbar'
 import AnimatedButton from './AnimatedButton';
@@ -72,7 +73,7 @@ function Main() {
 
                   {/* for mobile image  */}
                   <div class="lg:w-0 w-full z-0 ">
-                    <img src="profile2.png" alt="Profile" className='items-start w-[50%] mx-auto rounded-full h-full transition-transform' data-aos="zoom-in-left"
+                    <img src="profileimage.png" alt="Profile" className='items-start w-[50%] mx-auto rounded-full h-full transition-transform' data-aos="zoom-in-left"
                       data-aos-duration="1000" />
                   </div>
 
@@ -97,9 +98,20 @@ function Main() {
               </div>
 
               {/* Desktop */}
-              <div class="lg:max-w-xl lg:w-1/4 md:w-1/2 w-0 z-0 hover:origin-bottom-right hover:rotate-12 ease-in-out duration-700">
-                <img src="profile2.png" alt="Profile" className='hover:origin-top items-start w-[100%] mx-auto rounded-lg h-full transition-transform' data-aos="zoom-in-left"
-                  data-aos-duration="1000" />
+              <div class="xl:w-1/3 opacity-90 md:w-1/2 w-0 z-0 hover:origin-bottom-right hover:rotate-1 ease-in-out duration-700">
+                <motion.img
+                initial={{
+                  scale: 0,
+                  opacity: 0,
+                }}
+                  animate={{
+                    scale: 1,
+                    opacity: 1
+                  }}
+                  transition={{
+                    duration: 1.2
+                  }}
+                  src="profileimage.png" alt="Profile" className='hover:origin-top items-start w-full mx-auto rounded-lg h-full transition-transform' />
               </div>
             </div>
 

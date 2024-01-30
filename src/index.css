@@ -225,3 +225,7 @@
     transform: rotate(405deg);
   }
 }
+
+.mix-blend-color-burn{
+  mix-blend-mode: color-burn;
+}
