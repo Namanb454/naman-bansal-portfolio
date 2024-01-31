@@ -35,7 +35,7 @@ function Home() {
           <About />
         </div>
 
-        <div id='projects'>
+        <div id='portfolio'>
           {/* <HeroScroll /> */}
           <Projects />
         </div>

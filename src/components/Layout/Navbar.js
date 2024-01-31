@@ -53,7 +53,7 @@ const Navbar = () => {
     const navbar = [
         // { 'id': '1', 'nav': 'Intro', 'link': '#' },
         { 'id': '2', 'nav': 'About', 'link': '#about' },
-        { 'id': '5', 'nav': 'Portfolio', 'link': '#projects' },
+        { 'id': '5', 'nav': 'Portfolio', 'link': '#portfolio' },
         { 'id': '3', 'nav': 'Services', 'link': '#services' },
         { 'id': '5', 'nav': 'Skills', 'link': '#features' },
         { 'id': '4', 'nav': 'Pricing', 'link': '#pricing' },
@@ -87,7 +87,7 @@ const Navbar = () => {
                     >
                         <div className="flex-shrink-0">
                             <a href='#' className='flex lg:text-xl text-lg text-[#908a76] font-semibold tracking-wider'>
-                                <img src="profile2.png" alt="Profile" className='items-start w-8 bg-[#908a76] mx-auto rounded-full h-full transition-transform' />
+                                <img src="profileimage.png" alt="Profile" className='items-start w-8 bg-[#908a76] mx-auto rounded-full h-full transition-transform' />
                                 Naman Bansal</a>
                         </div>
                         <motion.div className="hidden md:block ml-auto ">

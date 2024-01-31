@@ -34,8 +34,8 @@ function Main() {
                   <h2 className='w-full lg:text-xl text-lg font-bold lg:text-left text-center lg:mx-0 py-2 md:mb-5 tracking-widest text-[#908a76]' id='signupHeading'>
                     <span
                       data-aos="zoom-out-right"
-                      data-aos-duration="1000"
-                      data-aos-delay="300"
+                      data-aos-duration="500"
+                      data-aos-delay="100"
                       id='naman'
                     >
                       Hey!<span className='lg:text-2xl text-xl text-[#fff4d6] lg:text-left text-center'> Naman </span>this side
@@ -45,8 +45,8 @@ function Main() {
 
                     <div className='lg:w-fit w-fit lg:text-2xl flex text-lg lg:text-left text-center font-bold lg:mx-0 mx-auto text-[#fff4d6]/90' id='signupsubHeading'
                       data-aos="zoom-out-right"
-                      data-aos-duration="1000"
-                      data-aos-delay="400"
+                      data-aos-duration="500"
+                      data-aos-delay="100"
                     >
                       <h3 className='text-[#908a76]'
                       >I'm a&nbsp;</h3>
@@ -66,8 +66,8 @@ function Main() {
                   <div class=" xl:w-[60%] md:justify-start items-end">
                     <h3 className='text-[#908a76] lg:text-base text-xs lg:mx-0 lg:text-justify text-center tracking-wider'
                       data-aos="zoom-out-right"
-                      data-aos-duration="1000"
-                      data-aos-delay="600">
+                      data-aos-duration="500"
+                      data-aos-delay="200">
                       Web development: Where creativity meets code, and innovation becomes interactive. </h3>
                   </div>
 
@@ -100,17 +100,9 @@ function Main() {
               {/* Desktop */}
               <div class="xl:w-1/3 opacity-90 md:w-1/2 w-0 z-0 hover:origin-bottom-right hover:rotate-1 ease-in-out duration-700">
                 <motion.img
-                initial={{
-                  scale: 0,
-                  opacity: 0,
-                }}
-                  animate={{
-                    scale: 1,
-                    opacity: 1
-                  }}
-                  transition={{
-                    duration: 1.2
-                  }}
+                  data-aos="zoom-in-left"
+                  data-aos-duration="500"
+                  data-aos-delay="200"
                   src="profileimage.png" alt="Profile" className='hover:origin-top items-start w-full mx-auto rounded-lg h-full transition-transform' />
               </div>
             </div>
