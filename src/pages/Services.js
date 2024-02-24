@@ -5,6 +5,10 @@ import Aos from 'aos'
 import { CgPerformance } from "react-icons/cg";
 import { DiResponsive } from "react-icons/di";
 import { CgWebsite } from "react-icons/cg";
+import { FaCartShopping, FaShopify } from "react-icons/fa6";
+import { GrDeploy } from "react-icons/gr";
+import { PiScalesDuotone } from "react-icons/pi";
+import { BiBookContent } from "react-icons/bi";
 
 function Services() {
     useEffect(() => {
@@ -16,56 +20,53 @@ function Services() {
             'img': <CgWebsite />,
             'heading': 'MERN Stack Development',
             'desc': "Offering technical assistance and resolving any problems that may occur subsequent to the launch.",
-            delay: '900'
+            delay: '100'
         },
         {
             'id': 4,
-            'img': 'itconsultancy.png',
+            'img': <FaCartShopping />,
             'heading': 'E-commerce',
             'desc': "Your objectives and preferences are given utmost importance as we customize web design experiences that surpass your expectations.",
-            delay: '500'
+            delay: '200'
         },
         {
             'id': 5,
-            'img': 'dataanalyst.png',
+            'img': <FaShopify />,
             'heading': 'Shopify',
             'desc': 'Transform data into actionable insights. Our data analysis services decode the information maze, guiding your decisions with precision.',
-            delay: '700'
+            delay: '300'
         },
         {
             'id': 2,
             'img': <DiResponsive />,
             'heading': 'Responsive Designs',
             'desc': 'Our proficiency lies in creating captivating user experiences across various devices, guaranteeing optimal levels of engagement and conversion rates.',
-            delay: '300'
+            delay: '400'
         },
         {
             'id': 6,
-            'img': 'seo.png',
+            'img': <GrDeploy />,
             'heading': 'Web Hosting and Deployment',
             'desc': 'Helping clients choose suitable hosting solutions. Deploying websites to hosting servers and configuring domain settings.',
-            delay: '600'
+            delay: '500'
         },
         {
             'id': 1,
             'img': <CgPerformance />,
             'heading': 'Performance Optimization',
             'desc': 'Improving website loading speed and overall performance. Minimizing code and asset size, implementing caching, and optimizing server configurations.',
-            delay: '200'
+            delay: '600'
         },
         {
             'id': 3,
-            'img': 'blockchain.png',
+            'img': <PiScalesDuotone />,
             'heading': 'Flexibility & Scalability',
             'desc': 'Our flexible solutions effectively cater to the growth and expansion of your business, enabling you to maintain a competitive edge.',
-            delay: '400'
+            delay: '700'
         },
-
-
-
         {
             'id': 7,
-            'img': 'graphicdesign.png',
+            'img': <BiBookContent />,
             'heading': 'Content Management',
             'desc': 'The task at hand involves the establishment and customization of content management systems for clients, enabling them to conveniently modify and update the content of their websites.',
             delay: '800'
@@ -73,10 +74,10 @@ function Services() {
     ]
 
     return (
-        <div id='services' className='w-[100%] bg-neutral-00 mx-auto py-24 bg-fixed bg-cover'
+        <div id='services' className='w-[100%] mx-auto py-24 bg-fixed bg-cover'
             style={{
                 backgroundImage: 'url(servicebg.jpg)'
-                
+
             }}
         >
             {/* <div class="custom-shape-divider-top-1705513934"
@@ -91,19 +92,19 @@ function Services() {
                 <div className="container px-5 mx-auto">
 
                     <h2 className='lg:text-3xl text-xl mb-5 font-bold text-center px-5 text-[#908a76] tracking-wider'>
-                        <span data-aos="zoom-out-right" data-aos-delay="100">Offer</span><span data-aos="zoom-out-right" data-aos-delay="200"> Professional</span><span className="lg:text-4xl text-2xl text-[#fff4d6]" data-aos="zoom-out-right" data-aos-delay="300"> Services</span></h2>
+                        <span data-aos="zoom-out-right" data-aos-delay="200">Offer</span><span data-aos="zoom-out-right" data-aos-delay="300"> Professional</span><span className="lg:text-4xl text-2xl text-[#fff4d6]" data-aos="zoom-out-right" data-aos-delay="400"> Services</span></h2>
                     <div className="flex flex-wrap -m-4">
                         {services.map(data => {
                             return (
                                 <div key={data.id} className="py-10 px-5 lg:w-1/3 bg-cover lg:h-[60vh] h-[40vh]"
                                     data-aos="zoom-out-right" data-aos-delay={data.delay}
                                 >
-                                    <div className="xl:space-y-5 space-y-3 gradient-border1 h-full bg-transparent border-[#908a76] hover:shadow-md hover:shadow-[#fff4d6] transition-all border-[1px] bg-opacity-75 lg:px-10 px-2 pt-10 pb-10 rounded-lg overflow-hidden relative ease-in-out duration-300">
+                                    <div className="xl:space-y-5 space-y-3 gradient-border1 h-full bg-transparent border-[#908a76] hover:shadow-md hover:shadow-neutral-200 transition-all border-[1px] bg-opacity-75 lg:px-10 px-2 pt-10 pb-10 rounded-lg overflow-hidden relative ease-in-out duration-300">
                                         <div className='flex'>
                                             <h1 className="w-full title-font lg:text-xl text-xl items-center lg:my-0 my-auto lg:text-left font-bold  lg:tracking-widest tracking-wide text-[#fff4d6]">{data.heading}</h1>
-                                            <div className='w-1/5 h-1/5 lg:mx-0 mx-auto' alt='img'>{data.img}</div>
+                                            <div className='w-1/5 text-2xl h-1/5 lg:mx-0 mx-auto' alt='img'>{data.img}</div>
                                         </div>
-                                        <p className="text-balance leading-relaxed text-[#908a76] font-semibold lg:text-left text-sm  tracking-wide">{data.desc}</p>
+                                        <p className="text-balance leading-relaxed text-neutral-200 font-semibold lg:text-left text-sm tracking-wide">{data.desc}</p>
                                     </div>
                                 </div>
                             )

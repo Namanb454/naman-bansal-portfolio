@@ -11,7 +11,7 @@ function Pricing() {
     const price = [
         {
             "title": "Essential",
-            "price": "₹ 800/hour",
+            "price": "₹ 400/hour",
             "desc1": "Require few pages only.",
             "desc2": "Delineation of work's scope lacks clarity.",
             "desc3": "Fix something in the website.",

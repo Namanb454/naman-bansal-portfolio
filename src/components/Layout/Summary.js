@@ -45,7 +45,7 @@ function Summary() {
                         </div>
                     </h2>
                 </div>
-                <div className='w-fit px-5'>
+                <div className='w-fit px-5 '>
                     <Aboutuscontent />
                 </div>
             </div>

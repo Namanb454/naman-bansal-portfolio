@@ -35,7 +35,7 @@ export const Aboutuscontent = () => {
   };
 
   return (
-    <div className="p-4 h-[30rem] md:h-[20rem] overflow-y-auto w-[100%] shadow-md text-justify shadow-white/80 max-w-2xl mx-auto rounded-md">
+    <div className="p-4 bg-neutral-800/80 backdrop-blur-sm h-[30rem] md:h-[20rem] overflow-y-auto w-[100%] shadow-md text-justify shadow-white/80 max-w-2xl mx-auto rounded-2xl">
       <Icons />
       <div className="mt-4">
         <div

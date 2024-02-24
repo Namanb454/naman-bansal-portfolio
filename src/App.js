@@ -21,7 +21,7 @@ function AppRouter() {
 
     useEffect(() => {
         const fetchData = async () => {
-            await new Promise((resolve) => setTimeout(resolve, 10));
+            await new Promise((resolve) => setTimeout(resolve, 1500));
             setLoading(false);
         };
         fetchData();

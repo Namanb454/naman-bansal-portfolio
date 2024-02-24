@@ -34,10 +34,9 @@ function About() {
     }
 
     return (
-        <div className='w-[100%] bg-neutral-00 mx-auto py-24 bg-fixed' id='naman'
+        <div className='w-[100%] mx-auto py-24 bg-fixed bg-neutral-' id='naman'
             style={{
                 backgroundImage: 'url(aboutbg.jpg)  ',
-
             }}
         >
 

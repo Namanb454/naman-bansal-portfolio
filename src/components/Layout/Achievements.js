@@ -22,7 +22,7 @@ function Achievements() {
 
                 {achievement.map((data) => {
                     return (
-                        <div className="flex flex-col items-center justify-center space-y-1 md:justify-start md:items-start"
+                        <div className="bg-neutral-800/80 backdrop-blur-sm rounded-2xl p-5 flex flex-col items-center justify-center space-y-1 md:justify-start md:items-start"
                             data-aos="zoom-in"
                             data-aos-duration="1000"
                             data-aos-delay={data.delay}

@@ -25,7 +25,7 @@ const Contact = () => {
             "bgcolor1": "#0A66C2",
             "bgcolor2": "#0077B5",
             "color": "white",
-            "link": "www.linkedin.com/in/naman-bansal-9585nb"
+            "link": "https://www.linkedin.com/in/naman-bansal-9585nb/"
         },
         {
             "links": <BsGithub />,

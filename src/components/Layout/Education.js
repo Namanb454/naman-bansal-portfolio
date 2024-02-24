@@ -33,7 +33,7 @@ function Education() {
 
                 {educations.map((data) => {
                     return (
-                        <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start"
+                        <div className="flex bg-neutral-800/80 backdrop-blur-sm rounded-xl p-5 flex-col items-center justify-center space-y-3 md:justify-start md:items-start"
                             data-aos="zoom-in"
                             data-aos-duration="1000"
                             data-aos-delay={data.delay}

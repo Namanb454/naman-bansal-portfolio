@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 function Projects() {
     return (
-        <div className='py-24 bg-fixed bg-cover'
+        <div className='py-24 bg-fixed bg-cover bg-neutral-950'
             style={{
                 backgroundImage: 'url(portfolio.jpg)  ',
 
