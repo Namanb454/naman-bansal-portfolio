@@ -9,8 +9,6 @@ import GetInTouch from './pages/GetInTouch';
 import { useEffect, useState } from 'react';
 import Loader from './components/Layout/Loader';
 import Aos from 'aos'
-import CustomCursor from './components/Layout/CustomCursor';
-
 
 function AppRouter() {
     useEffect(() => {
