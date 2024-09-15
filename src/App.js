@@ -27,7 +27,7 @@ function AppRouter() {
 
     return (
         <Router>
-            <div id='naman' className='cursor-pointer bg-cover bg-fixed bg-neutral-950'
+            <div id='naman' className='cursor-pointer bg-cover bg-fixed bg-black'
 
             >
 
