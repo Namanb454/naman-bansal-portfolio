@@ -273,8 +273,7 @@ function Home() {
               </a>
             </div>
           </div>
-          <a
-            href="https://www.figma.com/@mikeandreuzza"
+          <div
             class="ring-1 lg:row-start-3 items-center h-full flex p-8 flex-col justify-center hover:ring-primary/5 dark:hover:ring-white/20 dark:ring-white/10 ring-primary/5 relative rounded-3xl overflow-hidden bg-neutral-900 text-white dark:bg-secondary shadow-xl dark:shadow-thick"
           >
             {/* Skills */}
@@ -302,9 +301,9 @@ function Home() {
             >
               Skill Set
             </p>
-          </a>
+          </div>
           <div
-            class="lg:row-span-2 ring-1 dark:ring-white/10 ring-primary/5 hover:ring-primary/5 bg-neutral-900 dark:bg-secondary  dark:hover:ring-white/20 overflow-hidden duration-300 shadow-xl dark:shadow-thick rounded-3xl p-8"
+            class="lg:row-span-2 ring-1 dark:ring-white/10 ring-primary/5 hover:ring-primary/5 bg-neutral-900 dark:bg-secondary  dark:hover:ring-white/20 overflow-hidden duration-300 shadow-xl dark:shadow-thick rounded-3xl  p-8"
           >
 
             {/* Experiences */}
@@ -433,7 +432,7 @@ function Home() {
               <br />
               Let us embark on this journey together to transform your ideas into remarkable digital experiences.
             </p>
-            <p class="text-primary dark:text-white mt-4">Naman Bansal</p>
+            <p class="text-primary dark:text-white mt-4">~ Naman Bansal</p>
           </div>
         </div>
       </div>
