@@ -5,7 +5,6 @@ import {
     Route
 } from "react-router-dom";
 import Home from './pages/Home';
-import GetInTouch from './pages/GetInTouch';
 import { useEffect, useState } from 'react';
 import Loader from './components/Layout/Loader';
 import Aos from 'aos'
@@ -30,15 +29,12 @@ function AppRouter() {
             <div id='naman' className='cursor-pointer bg-cover bg-fixed bg-black'
 
             >
-
-                {/* <CustomCursor /> */}
                 {loading ? (
                     <Loader />
 
                 ) :
                     <Routes>
                         <Route exact path="/" element={<Home />} />
-                        <Route exact path="/contact" element={<GetInTouch />} />
                     </Routes>
                 }
             </div>

@@ -1,21 +1,13 @@
 import React, { useEffect } from 'react'
-import Layout from '../components/Layout/Layout'
-import Main from '../components/Layout/Main';
-import About from './About';
-import Services from './Services';
-import Features from './Features';
-import ScrollButton from '../components/Layout/ScrollButton';
-import Pricing from './Pricing';
-import Projects from './Projects';
-import GetInTouch from './GetInTouch';
 import Aos from 'aos'
 import { GoProjectSymlink } from "react-icons/go";
 import { MdLink } from "react-icons/md";
-import { FaAws, FaCss3, FaGithub, FaHtml5, FaLinux, FaNode, FaPython, FaReact } from 'react-icons/fa6';
+import { FaAws, FaCss3, FaGithub, FaHtml5, FaLinux, FaNode, FaReact } from 'react-icons/fa6';
 import { RiJavascriptFill } from 'react-icons/ri';
-import { SiCplusplus, SiExpress, SiFramer, SiMysql, SiNextdotjs, SiSanity, SiSupabase, SiTailwindcss } from 'react-icons/si';
+import { SiExpress, SiFramer, SiMysql, SiNextdotjs, SiSanity, SiSupabase, SiTailwindcss } from 'react-icons/si';
 import { DiMongodb } from 'react-icons/di';
 import { IoLogoFirebase } from 'react-icons/io5';
+import { Link } from 'react-router-dom';
 
 function Home() {
   useEffect(() => {
@@ -23,60 +15,16 @@ function Home() {
   }, [])
 
   return (
-    // <Layout>
-    //   <div className='bg-cover bg-fixed '
-    //     style={{
-    //       backgroundImage: 'url(headerbg.jpg)',
-    //     }}
-    //     // data-aos="zoom-in"
-    //     data-aos-duration="3000"
-    //     data-aos-delay="50"
-    //     >
-
-    //     <div className=''>
-    //       <Main />
-    //     </div>
-
-    //     <div id='about'>
-    //       <About />
-    //     </div>
-
-    //     <div id='portfolio'>
-    //       {/* <HeroScroll /> */}
-    //       <Projects />
-    //     </div>
-
-    //     <div className="overflow-y-scroll">
-    //       <ScrollButton />
-    //     </div>
-
-    //     <div id='services'>
-    //       <Services />
-    //     </div>
-
-    //     <div id='features'>
-    //       <Features />
-    //     </div>
-
-    //     <div id='pricing'>
-    //       {/* <MeteorPreview /> */}
-    //       <Pricing />
-    //     </div>
-
-    //     <div id='contact'>
-    //       <GetInTouch />
-    //     </div>
-    //   </div>
-
-    // </Layout>
     <section>
-      <div class="p-4">
+      <div class="p-4 text-balance poppins">
         <div
           class="grid grid-cols-1 gap-4 list-none lg:grid-cols-3 lg:grid-rows-3 xl:grid-cols-4 xl:grid-rows-4"
         >
           <div
             class="lg:row-span-2 ring-1 dark:ring-white/10 ring-primary/5 bg-neutral-900 dark:bg-secondary shadow-xl dark:shadow-thick rounded-3xl p-8"
           >
+
+            {/* Bio */}
             <div class="relative flex items-center gap-x-4">
               <img
                 src="/avatar.jpg"
@@ -85,10 +33,10 @@ function Home() {
               />
               <div class="text-sm leading-6">
                 <p class="font-semibold text-primary dark:text-white">
-                  <a href="#">
+                  <Link to="/">
                     <span class="absolute inset-0"></span>
                     Naman Bansal
-                  </a>
+                  </Link>
                 </p>
                 <p class="text-zinc-500 dark:text-zinc-400">
                   Fullstack Web Developer
@@ -101,10 +49,9 @@ function Home() {
               Hey, welcome to my site!
             </p>
             <p
-              class="mt-4 text-sm text-zinc-500 dark:text-zinc-400 font-light lg:text-xl"
+              class="mt-4 text-zinc-500 dark:text-zinc-400 font-medium text-sm"
             >
-              I'm a digital developer, and surfer from Delhi, India. In the
-              digital world, I craft interfaces and dive into coding intricacies.
+              I am a passionate developer with a strong foundation in MERN Stack and other libraries & frameworks complemented by expertise in Deployment.
               <br />
               <br />
               Beyond screens, I find solace and joy riding bike and tech content on Instagram. My life blends tech and nature, coding sessions, and travel.
@@ -113,6 +60,7 @@ function Home() {
           <div
             class="ring-1 dark:ring-white/10 ring-primary/5 rounded-3xl justify-between shadow-xl dark:shadow-thick items-center flex flex-col p-8 h-full bg-neutral-900  dark:bg-secondary"
           >
+            {/* Social Links */}
             <div class="w-full">
               <p
                 class="text-xl font-normal tracking-tight text-primary dark:text-white lg:text-8xl"
@@ -216,9 +164,9 @@ function Home() {
               </a>
             </div>
           </div>
+
+          {/* Projects */}
           <div
-
-
             href="/"
             class="ring-1 lg:row-span-2 flex flex-col justify-between group hover:ring-primary/10 dark:hover:ring-white/20 duration-300 h-full dark:ring-white/10 ring-primary/5 lg:row-start-2 md:grid-cols-2 md:grid lg:gap-0 md:items-center md:gap-12 lg:grid-cols-none lg:col-start-2 lg:col-span-2 rounded-3xl p-8 bg-neutral-900 dark:bg-secondary shadow-xl dark:shadow-thick"
           >
@@ -226,21 +174,70 @@ function Home() {
               <p
                 class="text-xl tracking-tight font-medium text-primary dark:text-white md:text-6xl"
               >
-                Portfolio
+                My Projects
+              </p>
+
+              <p
+                class="ext-xl tracking-tight font-medium text-primary dark:text-white md:text-4xl mt-6"
+              >
+                <h2 className=''>
+                  Horizon
+                  <a href='https://github.com/Namanb454/BankingApp' target='blank'>
+                    <MdLink />
+                  </a>
+                </h2>
               </p>
               <p class="mt-4 text-sm text-zinc-500 dark:text-zinc-400">
-                Design & development projects for startups.
-                <br />
+                <span className='text-2xl'>*</span> Build a platform that helps to connect with 50+ together and display transactions in real time.
               </p>
+              <p
+                class="ext-xl tracking-tight font-medium text-primary dark:text-white md:text-4xl mt-6"
+              >
+                <h2 className=''>
+                  Reamor UI
+                  <a href='https://reamor-ui.vercel.app/' target='blank'>
+                    <MdLink />
+                  </a>
+                </h2>
+              </p>
+              <p class="mt-4 text-sm text-zinc-500 dark:text-zinc-400">
+                <span className='text-2xl'>*</span> Developed an open source for UI developer to perform parallax animation.
+              </p>
+              <p
+                class="ext-xl tracking-tight font-medium text-primary dark:text-white md:text-4xl mt-6"
+              >
+                <h2 className=''>
+                  Tipriyo
+                  <a href='https://tipriyo.ai/' target='blank'>
+                    <MdLink />
+                  </a>
+                </h2>
+              </p>
+              <p class="mt-4 text-sm text-zinc-500 dark:text-zinc-400">
+                <span className='text-2xl'>*</span> Created a web-based virtual staging application that enables users to choose a particular room category along with its style.
+                The application features over 7 categories of rooms and their respective styles and helps you to save 90% of the cost.
+
+              </p>
+
+              <p
+                class="text-xl tracking-tight font-medium text-primary dark:text-white md:text-4xl mt-6"
+              >
+                <h2 className=''>
+                  E-commerce
+                  <a href='https://github.com/Namanb454/MERNStackEcommerce' target='blank'>
+                    <MdLink />
+                  </a>
+                </h2>
+              </p>
+              <p class="mt-4 text-sm text-zinc-500 dark:text-zinc-400">
+                <span className='text-2xl'>*</span> The ecommerce application is built on the MERN stack, utilizing ReactJS for the front end with Bootstrap for the user
+                interface. The backend is developed using Node.js, and MongoDB is used as the database.
+              </p>
+
             </div>
-            <div class="mt-8">
-              <img
-                src="/images/monomod.png"
-                class="rounded-2xl group-hover:ring-white/20 duration-300 invert dark:invert-0 aspect-[4/4] bg-primary/5 dark:bg-primary ring-1 ring-white/10  object-cover"
-                alt=""
-              />
-            </div>
+
           </div>
+          {/* Resume  */}
           <div
             class="ring-1 dark:ring-white/10  ring-primary/5 flex flex-col justify-between items-center rounded-3xl shadow-xl dark:shadow-thick p-8  bg-neutral-900 dark:bg-secondary overflow-hidden text-center lg:text-left"
           >
@@ -256,7 +253,7 @@ function Home() {
               </p>
             </div>
             <div class="w-full mt-8 md:max-w-xs lg:max-w-none">
-              <a href='images/NamanBansalResume.pdf' download
+              <a href='https://drive.google.com/file/d/1chqOswNo-0CtTiOh5rUkhNWMOFU0bW3q/view?usp=sharing' target='blank' download
                 class="text-sm py-2 w-full px-4 h-12 font-semibold ring-2 rounded-lg bg-primary dark:bg-white dark:text-primary dark:hover:text-white hover:text-primary dark:hover:bg-neutral-900/5 hover:bg-primary/10 flex duration-200 ring-offset-2 focus:ring-inline-flex items-center justify-between"
               >
                 Download my CV
@@ -280,39 +277,7 @@ function Home() {
             href="https://www.figma.com/@mikeandreuzza"
             class="ring-1 lg:row-start-3 items-center h-full flex p-8 flex-col justify-center hover:ring-primary/5 dark:hover:ring-white/20 dark:ring-white/10 ring-primary/5 relative rounded-3xl overflow-hidden bg-neutral-900 text-white dark:bg-secondary shadow-xl dark:shadow-thick"
           >
-            {/* <svg
-              class="w-24 h-24 lg:w-48 xl:h-64 xl:w-64 lg:h-48"
-              viewBox="0 0 90 90"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0_1_136)">
-                <path
-                  d="M45 45.5C45 42.9804 46.0009 40.5641 47.7825 38.7825C49.5641 37.0009 51.9804 36 54.5 36C57.0196 36 59.4359 37.0009 61.2175 38.7825C62.9991 40.5641 64 42.9804 64 45.5C64 48.0196 62.9991 50.4359 61.2175 52.2175C59.4359 53.9991 57.0196 55 54.5 55C51.9804 55 49.5641 53.9991 47.7825 52.2175C46.0009 50.4359 45 48.0196 45 45.5Z"
-                  fill="#1ABCFE"></path>
-                <path
-                  d="M26 64.5C26 61.9804 27.0009 59.5641 28.7825 57.7825C30.5641 56.0009 32.9804 55 35.5 55H45V64.5C45 67.0196 43.9991 69.4359 42.2175 71.2175C40.4359 72.9991 38.0196 74 35.5 74C32.9804 74 30.5641 72.9991 28.7825 71.2175C27.0009 69.4359 26 67.0196 26 64.5V64.5Z"
-                  fill="#0ACF83"></path>
-                <path
-                  d="M45 17V36H54.5C57.0196 36 59.4359 34.9991 61.2175 33.2175C62.9991 31.4359 64 29.0196 64 26.5C64 23.9804 62.9991 21.5641 61.2175 19.7825C59.4359 18.0009 57.0196 17 54.5 17H45Z"
-                  fill="#FF7262"></path>
-                <path
-                  d="M26 26.5C26 29.0196 27.0009 31.4359 28.7825 33.2175C30.5641 34.9991 32.9804 36 35.5 36H45V17H35.5C32.9804 17 30.5641 18.0009 28.7825 19.7825C27.0009 21.5641 26 23.9804 26 26.5V26.5Z"
-                  fill="#F24E1E"></path>
-                <path
-                  d="M26 45.5C26 48.0196 27.0009 50.4359 28.7825 52.2175C30.5641 53.9991 32.9804 55 35.5 55H45V36H35.5C32.9804 36 30.5641 37.0009 28.7825 38.7825C27.0009 40.5641 26 42.9804 26 45.5V45.5Z"
-                  fill="#A259FF"></path>
-              </g>
-              <defs>
-                <clipPath id="clip0_1_136">
-                  <rect
-                    width="38"
-                    height="57"
-                    fill="white"
-                    transform="translate(26 17)"></rect>
-                </clipPath>
-              </defs>
-            </svg> */}
+            {/* Skills */}
             <div className='grid xl:grid-cols-3 grid-cols-4 gap-10 xl:text-4xl text-2xl'>
               <FaHtml5 />
               <FaCss3 />
@@ -341,86 +306,59 @@ function Home() {
           <div
             class="lg:row-span-2 ring-1 dark:ring-white/10 ring-primary/5 hover:ring-primary/5 bg-neutral-900 dark:bg-secondary  dark:hover:ring-white/20 overflow-hidden duration-300 shadow-xl dark:shadow-thick rounded-3xl p-8"
           >
-            <div class="-mr-24">
-              <img
-                src="/images/lexington.png"
-                class="rounded-2xl object-cover ring-1 h-64 w-full lg:h-auto dark:ring-white/10 ring-primary/5 bg-tertiary"
-                alt=""
-              />
-            </div>
-            <div class="mt-8">
+
+            {/* Experiences */}
+            <div class="mt-">
               <div class="flex flex-wrap">
                 <div
-                  class="flex justify-center items-center text-sm font-medium text-primary dark:text-white"
+                  class="dark:text-white"
                 >
-                  {/* <svg
-                    class="flex-none w-4 h-4 stroke-current"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    viewBox="0 0 100 100"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M63.3694 5.33018C64.129 6.27325 64.5164 7.54562 65.291 10.0906L82.215 65.6862C75.8581 62.3873 69.0351 60.0773 61.9815 58.836L50.9623 21.5986C50.8744 21.3015 50.6928 21.0408 50.4445 20.8556C50.1962 20.6704 49.8945 20.5705 49.5848 20.571C49.275 20.5715 48.9737 20.6723 48.7259 20.8583C48.4782 21.0443 48.2974 21.3055 48.2105 21.6029L37.3247 58.8172C30.2392 60.0528 23.3848 62.3665 17 65.6778L34.0071 10.0776C34.7842 7.53708 35.1728 6.26679 35.9324 5.32559C36.603 4.49465 37.4753 3.84929 38.466 3.45101C39.5884 3 40.9167 3 43.5734 3H55.7208C58.381 3 59.7111 3 60.8344 3.45205C61.8261 3.85109 62.6988 4.49772 63.3694 5.33018Z"
-                      fill="currentColor"></path>
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M65.3945 68.3321C62.6045 70.7178 57.0359 72.3448 50.6215 72.3448C42.7487 72.3448 36.15 69.8938 34.399 66.5975C33.773 68.4867 33.6327 70.6488 33.6327 72.03C33.6327 72.03 33.2203 78.812 37.9374 83.5291C37.9374 81.0797 39.9229 79.0942 42.3722 79.0942C46.5704 79.0942 46.5657 82.7568 46.5619 85.7284L46.5616 85.9936C46.5616 90.5039 49.3182 94.3703 53.2386 96C52.6531 94.7957 52.3246 93.4433 52.3246 92.0141C52.3246 87.7124 54.85 86.1107 57.7851 84.2492C60.1204 82.7681 62.7151 81.1226 64.5033 77.8215C65.4364 76.0991 65.9662 74.1264 65.9662 72.03C65.9662 70.7407 65.7658 69.4982 65.3945 68.3321V68.3321Z"
-                      fill="#d94dd1"
-                      stroke="#d94dd1"></path>
-                  </svg> */}
-                  <GoProjectSymlink />
-                  <span class="ml-2.5">My Projects</span>
+                  <span class="font-semibold">Experiences</span>
                 </div>
               </div>
-              <p
-                class="ext-xl tracking-tight font-medium text-primary dark:text-white md:text-4xl mt-6"
-              >
-                <h2 className=''>
-                  Horizon
-                  <a href='https://github.com/Namanb454/BankingApp'>
-                    <MdLink />
-                  </a>
-                </h2>
-              </p>
-              <p class="mt-4 text-sm text-zinc-500 dark:text-zinc-400 font-">
-                *Build a platform that helps to connect with 50+ together and display transactions in real time.
-              </p>
-              <p
-                class="ext-xl tracking-tight font-medium text-primary dark:text-white md:text-4xl mt-6"
-              >
-                <h2 className=''>
-                  Tipriyo
-                  <a href='https://tipriyo.ai/'>
-                    <MdLink />
-                  </a>
-                </h2>
-              </p>
-              <p class="mt-4 text-sm text-zinc-500 dark:text-zinc-400">
-                ∗Created a web-based virtual staging application that enables users to choose a particular room category along with its style.
-                The application features over 7 categories of rooms and their respective styles and helps you to save 90% of the cost.
+              <div className='space-y-16'>
 
-              </p>
-
-              <p
-                class="text-xl tracking-tight font-medium text-primary dark:text-white md:text-4xl mt-6"
-              >
-                <h2 className=''>
-                  E-commerce
-                  <a href='https://github.com/Namanb454/MERNStackEcommerce'>
-                    <MdLink />
-                  </a>
-                </h2>
-              </p>
-              <p class="mt-4 text-sm text-zinc-500 dark:text-zinc-400">
-                ∗The ecommerce application is built on the MERN stack, utilizing ReactJS for the front end with Bootstrap for the user
-                interface. The backend is developed using Node.js, and MongoDB is used as the database.
-              </p>
+                <div class="space-y-2 tracking-tight text-primary dark:text-white md:text-2xl mt-6 font-semibold">
+                  <h2>
+                    Techype - <span className='md:font-normal md:text-lg'>SDE Intern</span>
+                  </h2>
+                  <p className='md:text-lg font-normal'>
+                    Dec 2024 - Present
+                  </p>
+                </div>
+                <div class="space-y-2 tracking-tight text-primary dark:text-white md:text-2xl mt-6 font-semibold">
+                  <h2>
+                    Model Verse - <span className='md:font-normal md:text-lg'>Full Stack Developer Intern</span>
+                  </h2>
+                  <p className='md:text-lg font-normal'>
+                    Jan 2024 - Aug 2024
+                  </p>
+                </div>
+                <div class="space-y-2 tracking-tight text-primary dark:text-white md:text-2xl mt-6 font-semibold">
+                  <h2>
+                    Coding Ninjas - <span className='md:font-normal md:text-lg'>SDE Intern</span>
+                  </h2>
+                  <p className='md:text-lg font-normal'>
+                    Nov 2023 - Jan 2024
+                  </p>
+                </div>
+                <div class="space-y-2 tracking-tight text-primary dark:text-white md:text-2xl mt-6 font-semibold">
+                  <h2>
+                    E-Cell - <span className='md:font-normal md:text-lg'>Member</span>
+                  </h2>
+                  <p className='md:text-lg font-normal'>
+                    Jan 2023 - Jan 2024
+                  </p>
+                </div>
+                <div class="space-y-2 tracking-tight text-primary dark:text-white md:text-2xl mt-6 font-semibold">
+                  <h2>
+                    GDSC - <span className='md:font-normal md:text-lg'>Web Developer</span>
+                  </h2>
+                  <p className='md:text-lg font-normal'>
+                    Jan 2022 - Jan 2024
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -460,7 +398,7 @@ function Home() {
             class="ring-1 dark:ring-white/10 ring-primary/5 shadow-xl dark:shadow-thick rounded-3xl p-8 lg:row-start-4 h-full flex flex-col justify-between bg-neutral-900 dark:bg-secondary"
           >
             <p
-              class="text-xl tracking-tight font-medium text-primary dark:text-white md:text-5xl"
+              class="text-xl tracking-tight font-medium text-primary dark:text-white md:text-4xl"
             >
               Testimonials
             </p>
