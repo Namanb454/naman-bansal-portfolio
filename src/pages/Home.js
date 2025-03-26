@@ -176,33 +176,6 @@ function Home() {
               >
                 My Projects
               </p>
-
-              <p
-                class="ext-xl tracking-tight font-medium text-primary text-white md:text-4xl mt-6"
-              >
-                <h2 className=''>
-                  Horizon
-                  <a href='https://github.com/Namanb454/BankingApp' target='blank'>
-                    <MdLink />
-                  </a>
-                </h2>
-              </p>
-              <p class="mt-4 text-sm  text-zinc-400">
-                <span className='text-2xl'>*</span> Build a platform that helps to connect with 50+ together and display transactions in real time.
-              </p>
-              <p
-                class="ext-xl tracking-tight font-medium text-primary text-white md:text-4xl mt-6"
-              >
-                <h2 className=''>
-                  Reamor UI
-                  <a href='https://reamor-ui.vercel.app/' target='blank'>
-                    <MdLink />
-                  </a>
-                </h2>
-              </p>
-              <p class="mt-4 text-sm  text-zinc-400">
-                <span className='text-2xl'>*</span> Developed an open source for UI developer to perform parallax animation.
-              </p>
               <p
                 class="ext-xl tracking-tight font-medium text-primary text-white md:text-4xl mt-6"
               >
@@ -218,7 +191,47 @@ function Home() {
                 The application features over 7 categories of rooms and their respective styles and helps you to save 90% of the cost.
 
               </p>
+              <p
+                class="ext-xl tracking-tight font-medium text-primary text-white md:text-4xl mt-6"
+              >
+                <h2 className=''>
+                  Npm Js
+                  <a href='https://npmjs-clone-two.vercel.app/' target='blank'>
+                    <MdLink />
+                  </a>
+                </h2>
+              </p>
+              <p class="mt-4 text-sm  text-zinc-400">
+                <span className='text-2xl'>*</span>Developed and clone the most famous and lovalble website of developers&nbsp;<span className='font-bold'>npm Js.&nbsp;</span>Search & install your favourite npm package.
+              </p>
 
+              <p
+                class="ext-xl tracking-tight font-medium text-primary text-white md:text-4xl mt-6"
+              >
+                <h2 className=''>
+                  Horizon
+                  <a href='https://github.com/Namanb454/BankingApp' target='blank'>
+                    <MdLink />
+                  </a>
+                </h2>
+              </p>
+              <p class="mt-4 text-sm  text-zinc-400">
+                <span className='text-2xl'>*</span> Build a platform that helps to connect with 50+ together and display transactions in real time.
+              </p>
+
+              <p
+                class="ext-xl tracking-tight font-medium text-primary text-white md:text-4xl mt-6"
+              >
+                <h2 className=''>
+                  Reamor UI
+                  <a href='https://reamor-ui.vercel.app/' target='blank'>
+                    <MdLink />
+                  </a>
+                </h2>
+              </p>
+              <p class="mt-4 text-sm  text-zinc-400">
+                <span className='text-2xl'>*</span> Developed an open source for UI developer to perform parallax animation.
+              </p>
               <p
                 class="text-xl tracking-tight font-medium text-primary text-white md:text-4xl mt-6"
               >
@@ -253,10 +266,10 @@ function Home() {
               </p>
             </div>
             <div class="w-full mt-8 md:max-w-xs lg:max-w-none">
-              <a href='https://drive.google.com/file/d/1chqOswNo-0CtTiOh5rUkhNWMOFU0bW3q/view?usp=sharing' target='blank' download
+              <a href='https://drive.google.com/file/d/1UBKuspee0BXMPwTazdh4jhGTzDc1i2mT/view' target='blank' download
                 class="text-sm py-2 w-full px-4 h-12 font-semibold ring-2 rounded-lg bg-primary dark:bg-white text-primary dark:hover:text-white hover:text-primary dark:hover:bg-neutral-900/5 hover:bg-primary/10 flex duration-200 ring-offset-2 focus:ring-inline-flex items-center justify-between text-white"
               >
-                Download my CV
+                Get my CV
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="icon icon-tabler icon-tabler-download w-4 h-4"
@@ -339,6 +352,14 @@ function Home() {
                   </h2>
                   <p className='md:text-lg font-normal'>
                     Nov 2023 - Jan 2024
+                  </p>
+                </div>
+                <div class="space-y-2 tracking-tight text-primary text-white md:text-2xl mt-6 font-semibold">
+                  <h2>
+                    siteScript - <span className='md:font-normal md:text-lg'>Self Employed</span>
+                  </h2>
+                  <p className='md:text-lg font-normal'>
+                    Aug 2023 - Nov 2024
                   </p>
                 </div>
                 <div class="space-y-2 tracking-tight text-primary text-white md:text-2xl mt-6 font-semibold">
