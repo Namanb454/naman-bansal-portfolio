@@ -4,6 +4,7 @@ import { GoProjectSymlink } from "react-icons/go";
 import { MdLink } from "react-icons/md";
 import { FaAws, FaCss3, FaGithub, FaHtml5, FaLinux, FaNode, FaReact } from 'react-icons/fa6';
 import { RiJavascriptFill } from 'react-icons/ri';
+import { BiLogoTypescript } from "react-icons/bi";
 import { SiExpress, SiFramer, SiMysql, SiNextdotjs, SiSanity, SiSupabase, SiTailwindcss } from 'react-icons/si';
 import { DiMongodb } from 'react-icons/di';
 import { IoLogoFirebase } from 'react-icons/io5';
@@ -49,12 +50,12 @@ function Home() {
               Hey, welcome to my site!
             </p>
             <p
-              class="mt-4  text-zinc-400 font-medium text-sm"
+              class="mt-4  text-zinc-400 font-normal text-sm"
             >
-              I am a passionate developer with a strong foundation in MERN Stack and other libraries & frameworks complemented by expertise in Deployment.
+              I am a passionate fullstack developer with a strong foundation in <span className='font-bold'> JS/TS, ReactJs, NodeJs, NextJs, MongoDB, Sql, </span> and other libraries & frameworks complemented by expertise in Deployment.
               <br />
               <br />
-              Beyond screens, I find solace and joy riding bike and tech content on Instagram. My life blends tech and nature, coding sessions, and travel.
+              Beyond screens, I find solace and joy riding bike and creating tech content on Instagram. My life blends tech and nature, coding sessions, and travel.
             </p>
           </div>
           <div
@@ -294,6 +295,7 @@ function Home() {
               <FaHtml5 />
               <FaCss3 />
               <RiJavascriptFill />
+              <BiLogoTypescript />
               <SiTailwindcss />
               <FaReact />
               <SiNextdotjs />
