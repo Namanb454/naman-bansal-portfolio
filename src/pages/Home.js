@@ -32,24 +32,24 @@ function Home() {
                 class="h-10 w-10 rounded-full ring-1 dark:ring-white/10 ring-primary/5"
               />
               <div class="text-sm leading-6">
-                <p class="font-semibold text-primary dark:text-white">
+                <p class="font-semibold text-primary text-white">
                   <Link to="/">
                     <span class="absolute inset-0"></span>
                     Naman Bansal
                   </Link>
                 </p>
-                <p class="text-zinc-500 dark:text-zinc-400">
+                <p class=" text-zinc-400">
                   Fullstack Web Developer
                 </p>
               </div>
             </div>
             <p
-              class="text-3xl mt-6 font-semibold lg:text-4xl tracking-tight text-primary dark:text-white"
+              class="text-3xl mt-6 font-semibold lg:text-4xl tracking-tight text-primary text-white"
             >
               Hey, welcome to my site!
             </p>
             <p
-              class="mt-4 text-zinc-500 dark:text-zinc-400 font-medium text-sm"
+              class="mt-4  text-zinc-400 font-medium text-sm"
             >
               I am a passionate developer with a strong foundation in MERN Stack and other libraries & frameworks complemented by expertise in Deployment.
               <br />
@@ -63,7 +63,7 @@ function Home() {
             {/* Social Links */}
             <div class="w-full">
               <p
-                class="text-xl font-normal tracking-tight text-primary dark:text-white lg:text-8xl"
+                class="text-xl font-normal tracking-tight text-primary text-white lg:text-8xl"
               >
                 Find me on
               </p>
@@ -75,7 +75,7 @@ function Home() {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="icon icon-tabler icon-tabler-mail h-6 w-6 group-hover:scale-125 duration-300 text-primary dark:text-white hover:text-neutral-900 group-hover text-primary:dark:text-white/50"
+                  class="icon icon-tabler icon-tabler-mail h-6 w-6 group-hover:scale-125 duration-300 text-primary text-white hover:text-neutral-900 group-hover text-primary:text-white/50"
                   viewBox="0 0 24 24"
                   stroke-width="0.8"
                   stroke="currentColor"
@@ -93,7 +93,7 @@ function Home() {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="icon icon-tabler icon-tabler-mail h-6 w-6 group-hover:scale-125 duration-300 text-primary dark:text-white group-hover:text-neutral-900 group-hover text-primary:dark:text-white/50"
+                  class="icon icon-tabler icon-tabler-mail h-6 w-6 group-hover:scale-125 duration-300 text-primary text-white group-hover:text-neutral-900 group-hover text-primary:text-white/50"
                   viewBox="0 0 24 24"
                   stroke-width="0.8"
                   stroke="currentColor"
@@ -111,7 +111,7 @@ function Home() {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="icon icon-tabler icon-tabler-mail h-6 w-6 group-hover:scale-125 duration-300 text-primary dark:text-white group-hover:text-neutral-900 group-hover text-primary:dark:text-white/50"
+                  class="icon icon-tabler icon-tabler-mail h-6 w-6 group-hover:scale-125 duration-300 text-primary text-white group-hover:text-neutral-900 group-hover text-primary:text-white/50"
                   viewBox="0 0 24 24"
                   stroke-width="0.8"
                   stroke="currentColor"
@@ -130,7 +130,7 @@ function Home() {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="icon icon-tabler icon-tabler-mail h-6 w-6 group-hover:scale-125 duration-300 text-primary dark:text-white group-hover:text-neutral-900 group-hover text-primary:dark:text-white/50"
+                  class="icon icon-tabler icon-tabler-mail h-6 w-6 group-hover:scale-125 duration-300 text-primary text-white group-hover:text-neutral-900 group-hover text-primary:text-white/50"
                   viewBox="0 0 24 24"
                   stroke-width="0.8"
                   stroke="currentColor"
@@ -148,7 +148,7 @@ function Home() {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="icon icon-tabler icon-tabler-mail h-6 w-6 group-hover:scale-125 duration-300 text-primary dark:text-white group-hover:text-neutral-900 group-hover text-primary:dark:text-white/50"
+                  class="icon icon-tabler icon-tabler-mail h-6 w-6 group-hover:scale-125 duration-300 text-primary text-white group-hover:text-neutral-900 group-hover text-primary:text-white/50"
                   viewBox="0 0 24 24"
                   stroke-width="0.8"
                   stroke="currentColor"
@@ -172,13 +172,13 @@ function Home() {
           >
             <div>
               <p
-                class="text-xl tracking-tight font-medium text-primary dark:text-white md:text-6xl"
+                class="text-xl tracking-tight font-medium text-primary text-white md:text-6xl"
               >
                 My Projects
               </p>
 
               <p
-                class="ext-xl tracking-tight font-medium text-primary dark:text-white md:text-4xl mt-6"
+                class="ext-xl tracking-tight font-medium text-primary text-white md:text-4xl mt-6"
               >
                 <h2 className=''>
                   Horizon
@@ -187,11 +187,11 @@ function Home() {
                   </a>
                 </h2>
               </p>
-              <p class="mt-4 text-sm text-zinc-500 dark:text-zinc-400">
+              <p class="mt-4 text-sm  text-zinc-400">
                 <span className='text-2xl'>*</span> Build a platform that helps to connect with 50+ together and display transactions in real time.
               </p>
               <p
-                class="ext-xl tracking-tight font-medium text-primary dark:text-white md:text-4xl mt-6"
+                class="ext-xl tracking-tight font-medium text-primary text-white md:text-4xl mt-6"
               >
                 <h2 className=''>
                   Reamor UI
@@ -200,11 +200,11 @@ function Home() {
                   </a>
                 </h2>
               </p>
-              <p class="mt-4 text-sm text-zinc-500 dark:text-zinc-400">
+              <p class="mt-4 text-sm  text-zinc-400">
                 <span className='text-2xl'>*</span> Developed an open source for UI developer to perform parallax animation.
               </p>
               <p
-                class="ext-xl tracking-tight font-medium text-primary dark:text-white md:text-4xl mt-6"
+                class="ext-xl tracking-tight font-medium text-primary text-white md:text-4xl mt-6"
               >
                 <h2 className=''>
                   Tipriyo
@@ -213,14 +213,14 @@ function Home() {
                   </a>
                 </h2>
               </p>
-              <p class="mt-4 text-sm text-zinc-500 dark:text-zinc-400">
+              <p class="mt-4 text-sm  text-zinc-400">
                 <span className='text-2xl'>*</span> Created a web-based virtual staging application that enables users to choose a particular room category along with its style.
                 The application features over 7 categories of rooms and their respective styles and helps you to save 90% of the cost.
 
               </p>
 
               <p
-                class="text-xl tracking-tight font-medium text-primary dark:text-white md:text-4xl mt-6"
+                class="text-xl tracking-tight font-medium text-primary text-white md:text-4xl mt-6"
               >
                 <h2 className=''>
                   E-commerce
@@ -229,7 +229,7 @@ function Home() {
                   </a>
                 </h2>
               </p>
-              <p class="mt-4 text-sm text-zinc-500 dark:text-zinc-400">
+              <p class="mt-4 text-sm  text-zinc-400">
                 <span className='text-2xl'>*</span> The ecommerce application is built on the MERN stack, utilizing ReactJS for the front end with Bootstrap for the user
                 interface. The backend is developed using Node.js, and MongoDB is used as the database.
               </p>
@@ -243,18 +243,18 @@ function Home() {
           >
             <div>
               <p
-                class="text-xl text-primary dark:text-white lg:text-7xl tracking-tight"
+                class="text-xl text-primary text-white lg:text-7xl tracking-tight"
               >
                 Grab my résumé!
               </p>
-              <p class="mt-4 text-sm text-zinc-500 dark:text-zinc-400 md:max-w-xs lg:max-w-none">
+              <p class="mt-4 text-sm  text-zinc-400 md:max-w-xs lg:max-w-none">
                 Unlock the doors to explore the rich tapestry of my professional
                 journey and accomplishments.
               </p>
             </div>
             <div class="w-full mt-8 md:max-w-xs lg:max-w-none">
               <a href='https://drive.google.com/file/d/1chqOswNo-0CtTiOh5rUkhNWMOFU0bW3q/view?usp=sharing' target='blank' download
-                class="text-sm py-2 w-full px-4 h-12 font-semibold ring-2 rounded-lg bg-primary dark:bg-white dark:text-primary dark:hover:text-white hover:text-primary dark:hover:bg-neutral-900/5 hover:bg-primary/10 flex duration-200 ring-offset-2 focus:ring-inline-flex items-center justify-between"
+                class="text-sm py-2 w-full px-4 h-12 font-semibold ring-2 rounded-lg bg-primary dark:bg-white text-primary dark:hover:text-white hover:text-primary dark:hover:bg-neutral-900/5 hover:bg-primary/10 flex duration-200 ring-offset-2 focus:ring-inline-flex items-center justify-between text-white"
               >
                 Download my CV
                 <svg
@@ -297,7 +297,7 @@ function Home() {
               <SiFramer />
             </div>
             <p
-              class="text-xl  text-primary dark:text-white lg:text-2xl mt-6"
+              class="text-xl  text-primary text-white lg:text-2xl mt-6"
             >
               Skill Set
             </p>
@@ -310,14 +310,14 @@ function Home() {
             <div class="mt-">
               <div class="flex flex-wrap">
                 <div
-                  class="dark:text-white"
+                  class="text-white"
                 >
                   <span class="font-semibold">Experiences</span>
                 </div>
               </div>
               <div className='space-y-16'>
 
-                <div class="space-y-2 tracking-tight text-primary dark:text-white md:text-2xl mt-6 font-semibold">
+                <div class="space-y-2 tracking-tight text-primary text-white md:text-2xl mt-6 font-semibold">
                   <h2>
                     Techype - <span className='md:font-normal md:text-lg'>SDE Intern</span>
                   </h2>
@@ -325,7 +325,7 @@ function Home() {
                     Dec 2024 - Present
                   </p>
                 </div>
-                <div class="space-y-2 tracking-tight text-primary dark:text-white md:text-2xl mt-6 font-semibold">
+                <div class="space-y-2 tracking-tight text-primary text-white md:text-2xl mt-6 font-semibold">
                   <h2>
                     Model Verse - <span className='md:font-normal md:text-lg'>Full Stack Developer Intern</span>
                   </h2>
@@ -333,7 +333,7 @@ function Home() {
                     Jan 2024 - Aug 2024
                   </p>
                 </div>
-                <div class="space-y-2 tracking-tight text-primary dark:text-white md:text-2xl mt-6 font-semibold">
+                <div class="space-y-2 tracking-tight text-primary text-white md:text-2xl mt-6 font-semibold">
                   <h2>
                     Coding Ninjas - <span className='md:font-normal md:text-lg'>SDE Intern</span>
                   </h2>
@@ -341,7 +341,7 @@ function Home() {
                     Nov 2023 - Jan 2024
                   </p>
                 </div>
-                <div class="space-y-2 tracking-tight text-primary dark:text-white md:text-2xl mt-6 font-semibold">
+                <div class="space-y-2 tracking-tight text-primary text-white md:text-2xl mt-6 font-semibold">
                   <h2>
                     E-Cell - <span className='md:font-normal md:text-lg'>Member</span>
                   </h2>
@@ -349,7 +349,7 @@ function Home() {
                     Jan 2023 - Jan 2024
                   </p>
                 </div>
-                <div class="space-y-2 tracking-tight text-primary dark:text-white md:text-2xl mt-6 font-semibold">
+                <div class="space-y-2 tracking-tight text-primary text-white md:text-2xl mt-6 font-semibold">
                   <h2>
                     GDSC - <span className='md:font-normal md:text-lg'>Web Developer</span>
                   </h2>
@@ -368,7 +368,7 @@ function Home() {
 
             <div class="relative p-8 text-center w-full">
               <p
-                class="text-xl tracking-tight font-medium text-primary dark:text-white md:text-6xl"
+                class="text-xl tracking-tight font-medium text-primary text-white md:text-6xl"
               >
                 Subscribe <span class="lg:block">to my newsletter</span>
               </p>
@@ -380,13 +380,13 @@ function Home() {
                   id="email-address"
                   autocomplete="email"
                   required=""
-                  class="block w-full h-12 px-4 py-2 text-sm text-zinc-500 bg-zinc-100 dark:bg-tertiary ring-1 dark:ring-white/10 ring-primary/5 rounded-lg appearance-none focus:ring-white/20 placeholder-zinc-400 focus:border-zinc-300 focus:bg-primary focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                  class="block w-full h-12 px-4 py-2 text-sm  bg-zinc-100 dark:bg-tertiary ring-1 dark:ring-white/10 ring-primary/5 rounded-lg appearance-none focus:ring-white/20 placeholder-zinc-400 focus:border-zinc-300 focus:bg-primary focus:outline-none focus:ring-indigo-500 sm:text-sm"
                   placeholder="Enter your email"
                 />
                 <div class="mt-4 sm:ml-2 sm:mt-0 sm:flex-shrink-0">
                   <button
                     type="submit"
-                    class="text-sm py-2 w-full px-4 h-12 font-semibold focus:ring-2 rounded-lg bg-primary dark:bg-neutral-900 dark:text-primary dark:hover:text-white hover:text-primary dark:hover:bg-neutral-900/5 hover:bg-primary/10 text-white flex duration-200 focus:ring-offset-2 focus:ring-inline-flex items-center justify-between"
+                    class="text-sm py-2 w-full px-4 h-12 font-semibold focus:ring-2 rounded-lg bg-primary dark:bg-neutral-900 text-primary dark:hover:text-white hover:text-primary dark:hover:bg-neutral-900/5 hover:bg-primary/10 text-white flex duration-200 focus:ring-offset-2 focus:ring-inline-flex items-center justify-between"
                   >Subscribe</button
                   >
                 </div>
@@ -397,25 +397,25 @@ function Home() {
             class="ring-1 dark:ring-white/10 ring-primary/5 shadow-xl dark:shadow-thick rounded-3xl p-8 lg:row-start-4 h-full flex flex-col justify-between bg-neutral-900 dark:bg-secondary"
           >
             <p
-              class="text-xl tracking-tight font-medium text-primary dark:text-white md:text-4xl"
+              class="text-xl tracking-tight font-medium text-primary text-white md:text-4xl"
             >
               Testimonials
             </p>
             <div class="md:grid md:grid-cols-2 gap-6 lg:grid-cols-1">
               <div class="mt-4">
-                <p class="text-sm text-pink-500 dark:text-pink-400">
+                <p class="text-sm text-pink-500 text-pink-400">
                   "He was recommended to me by a colleague for site development and design, and I can assure you that working with him would be beneficial. He is really imaginative and attentive to your needs, and suddenly presto—the job is done. He continued to communicate even after the project was turned over to see if anything needed to be changed and whether everything was going well. I endorse him. Bravo to you, friend 👍"
                 </p>
-                <p class="text-xs mt-2 text-zinc-500">
+                <p class="text-xs mt-2 ">
                   <span class="block text-xs">Mr. Ravi</span>
                   <span class="block text-xs">Founder - Prime Care Alliance</span>
                 </p>
               </div>
               <div class="mt-4">
-                <p class="text-sm text-orange-500 dark:text-orange-300">
+                <p class="text-sm text-orange-500 text-orange-300">
                   "From the initial concept to the final product, siteScript exceeded our expectations every step of the way."
                 </p>
-                <p class="text-xs mt-2 text-zinc-500">
+                <p class="text-xs mt-2 ">
                   <span class="block text-xs">Srijan Mehrotra</span>
                   <span class="block text-xs">Founder - Ubilang</span>
                 </p>
@@ -426,13 +426,13 @@ function Home() {
             class="lg:col-span-2 xl:col-span-1 h-full flex flex-col justify-between lg:row-span-2 ring-1 dark:ring-white/10 ring-primary/5 bg-neutral-900 dark:bg-secondary shadow-xl dark:shadow-thick rounded-3xl p-8"
           >
             <p
-              class="text-xl md:text-3xl tracking-tight font-medium text-primary dark:text-white"
+              class="text-xl md:text-3xl tracking-tight font-medium text-primary text-white"
             >
               I have successfully developed numerous websites that showcase my dedication to delivering excellence.
               <br />
               Let us embark on this journey together to transform your ideas into remarkable digital experiences.
             </p>
-            <p class="text-primary dark:text-white mt-4">~ Naman Bansal</p>
+            <p class="text-primary text-white mt-4">~ Naman Bansal</p>
           </div>
         </div>
       </div>
